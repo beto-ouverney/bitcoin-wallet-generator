@@ -28,5 +28,5 @@ let address = bitcoin.payments.p2pkh({ pubkey: node.publicKey, network }).addres
 console.log("Generated Wallet")
 console.log("Address: " + address)
 console.log("Private Key: " + node.toWIF())
-console.log("Public Key: " + node.publicKey)
+console.log("Public Key: " + node.publicKey.toString('hex'))
 console.log("Seed: " + mnemonic)
